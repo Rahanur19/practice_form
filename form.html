@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: url("https://static.vecteezy.com/system/resources/thumbnails/007/278/150/small/dark-background-abstract-with-light-effect-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+        }
+        .df {
+            display: flex;
+        }
+
+        .input {
+            flex-direction: column;
+        }
+
+        .checkbox-left {
+            flex-direction: column;
+
+        }
+        .info-child{
+            flex-direction: column;
+            align-items: end;
+        }
+
+        .info{
+            width: 33%;
+            flex-direction: column;
+            gap: 3em;
+
+        }
+
+        .form{
+            width: 67%;
+            color: white;
+        }
+
+        .form-checkbox{
+            justify-content: space-between;
+        }
+        .section{
+            gap: 2em;
+            margin: 20% 10%;
+            padding: 1em;
+            background-color: rgb(76 75 105 / 69%);
+        }
+
+        .name{
+            width: 70%;
+        }
+        .phone{
+            width: 30%;
+        }
+
+        .form-checkbox{
+            margin-bottom:2em ;
+        }
+        .tb{
+            background: transparent;
+        }
+        .info-heading{
+            font-size: 2em;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="section df">
+        <div class="info df">
+            <div class="info-child df">
+                <span>get in</span>
+                <h2 class="info-heading">TOUCH</h2>
+                <span>(240) 87876 786</span>
+                <span>examle@gmail.com</span>
+            </div>
+
+            <div class="info-child df">
+                <span>get</span>
+                <h2 class="info-heading">HERE</h2>
+                <span>251 Lorem ipsum dolor sit.</span>
+                <span>Lorem, ipsum dolor.</span>
+            </div>
+        </div>
+
+        <form class="form">
+            <div class="input df">
+                <div class="split df">
+                    <input class="name tb" type="text" placeholder="Name*">
+                    <input class="phone tb" type="number" placeholder="Phone*">
+                </div>
+                <input class="tb" type="email" placeholder="Email*">
+                <input class="tb" type="text" placeholder="Company Name*">
+            </div>
+            <div class="form-heading">
+                <h3>What Can We Help You With?</h3>
+            </div>
+            <div class="form-checkbox df">
+                <div class="checkbox-left df">
+                    <div>
+                        <input type="checkbox" id="web">
+                        Website Design / Development
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        Paid Digital Ads (Google / Facebook / LinkedIn)
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        Search Engine Optimization
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        Social Media Management
+                    </div>
+                </div>
+
+                <div class="check-right">
+                    <div>
+                        <input type="checkbox">
+                        Marketing Strategy
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        Branding
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        Traditional Marketing
+                    </div>
+                </div>
+            </div>
+            <div class="textarea">
+                <textarea class="tb" name="" id="" cols="100" rows="12" placeholder="Your message (optionsl)"></textarea>
+            </div>
+            <input class="tb" type="submit" value="Send now">
+        </form>
+    </section>
+</body>
+
+</html>
